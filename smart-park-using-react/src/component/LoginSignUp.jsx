@@ -14,13 +14,13 @@ function LoginSignUp() {
     password: "",
   });
 
-  // 🔹 Update form data dynamically
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  // 🔹 Handle Sign Up
+ 
   const handleSignUp = async () => {
     try {
       const res = await fetch("https://your-api.com/register", {
@@ -40,7 +40,7 @@ function LoginSignUp() {
     }
   };
 
-  // 🔹 Handle Log In
+ 
   const handleLogin = async () => {
     try {
       const res = await fetch("https://your-api.com/login", {
